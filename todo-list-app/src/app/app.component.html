@@ -422,25 +422,11 @@
     </svg>
   </div>
 
-  <!-- Resources -->
-  <h2>TODO LIST</h2>
-  <div class="task-add">
-    <input
-      type="task"
-      [(ngModel)]="newTask.name"
-      placeholder="Ingresar tarea"
-    />
-    <button (click)="add()">Agregar</button>
-  </div>
-  <div>
-    Cantidad: {{list.length}}
-    <ng-container *ngFor="let item of list">
-      <div class="task-item" *ngIf="item">
-        <span>{{ item.name }}</span>
-        <a (click)="delete(item)">Eliminar</a>
-      </div>
-    </ng-container>
-  </div>
+
+  <br>
+    <app-to-do></app-to-do>
+
+
   <div></div>
 
   <!-- Links -->
