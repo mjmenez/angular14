@@ -1,7 +1,12 @@
 
 .task-item{
+  border: 1px solid greenyellow;
   display: flex;
   gap:  10px;
+}
+
+.task-item-default{
+  background-color: aqua;
 }
 
 .to-do-list{

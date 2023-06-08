@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
+
 
 @Component({
   selector: 'app-to-do-add',
@@ -11,11 +13,12 @@ export class ToDoAddComponent implements OnInit {
   newTask: any = {};
 
   ngOnInit(): void {}
-  constructor() {}
+  constructor(private toastrService: ToastrService) {}
 
   add(): void {
     if (!this.newTask.name) return;
     this.list.push(this.newTask);
     this.newTask = {};
+    this.toastrService.success('ToDo App','Nueva tarea agregada')
   }
 }

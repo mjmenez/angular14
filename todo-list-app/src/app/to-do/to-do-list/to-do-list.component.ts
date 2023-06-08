@@ -12,8 +12,8 @@ export class ToDoListComponent implements OnInit{
 
   ngOnInit(): void {
 
-    this.list.push({ id: 1, name: 'Limpiar habitación 402' });
-    this.list.push({ id: 2, name: 'Cargar Frigo bar 402' });
+    this.list.push({ id: 1, name: 'Limpiar habitación 402', default: true});
+    this.list.push({ id: 2, name: 'Cargar Frigo bar 402', default: true });
   }
   delete(item: any): void {
     if(!item.name)

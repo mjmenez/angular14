@@ -1,7 +1,7 @@
 <div class="to-do-list">
   Cantidad: {{list.length}}
   <ng-container *ngFor="let item of list">
-    <div class="task-item" *ngIf="item">
+    <div class="task-item" *ngIf="item" [ngClass]="{'task-item-default':item.default==true}">
       <span>{{ item.name }}</span>
       <a (click)="delete(item)">Eliminar <i class="fa-solid fa-trash-can"></i></a>
     </div>
