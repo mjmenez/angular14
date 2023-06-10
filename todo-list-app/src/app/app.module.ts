@@ -6,11 +6,14 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { ToDoModule } from './to-do/to-do.module';
 import { ToastrModule } from 'ngx-toastr';
+import { DirectivesModule } from './directives/directives.module';
+import { AuthModule } from './auth/auth.module';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -18,7 +21,9 @@ import { ToastrModule } from 'ngx-toastr';
     AppRoutingModule,
     FormsModule,
     ToDoModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    DirectivesModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

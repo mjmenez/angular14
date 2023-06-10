@@ -9,11 +9,15 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class ToDoAddComponent implements OnInit {
 
-  @Input() list: any[] = [];
+  @Input()
+  list: any[] = [];
+
   newTask: any = {};
 
-  ngOnInit(): void {}
-  constructor(private toastrService: ToastrService) {}
+  ngOnInit(): void { console.log('ToDoAddComponent -- OnInit');}
+  constructor(private toastrService: ToastrService) {
+    console.log('ToDoAddComponent -- constructor');
+  }
 
   add(): void {
     if (!this.newTask.name) return;

@@ -6,7 +6,9 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./to-do-list.component.scss'],
 })
 export class ToDoListComponent implements OnInit {
-  @Input() list: any[] = [];
+  @Input()
+  list: any[] = [];
+
   itemSelected: any = {};
   constructor() {}
 
