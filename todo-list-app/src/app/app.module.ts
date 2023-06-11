@@ -8,6 +8,7 @@ import { ToDoModule } from './to-do/to-do.module';
 import { ToastrModule } from 'ngx-toastr';
 import { DirectivesModule } from './directives/directives.module';
 import { AuthModule } from './auth/auth.module';
+import { HomeModule } from './home/home.module';
 
 
 
@@ -21,6 +22,7 @@ import { AuthModule } from './auth/auth.module';
     AppRoutingModule,
     FormsModule,
     ToDoModule,
+    HomeModule,
     ToastrModule.forRoot(),
     DirectivesModule,
     AuthModule
