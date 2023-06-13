@@ -9,6 +9,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { DirectivesModule } from './directives/directives.module';
 import { AuthModule } from './auth/auth.module';
 import { HomeModule } from './home/home.module';
+import { UsersModule } from './users/users.module';
 
 
 
@@ -25,6 +26,7 @@ import { HomeModule } from './home/home.module';
     HomeModule,
     ToastrModule.forRoot(),
     DirectivesModule,
+    UsersModule,
     AuthModule
   ],
   providers: [],

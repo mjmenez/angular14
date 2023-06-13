@@ -1,1 +1,6 @@
-<p>users works!</p>
+<h2>Users</h2>
+<div class="user-item" *ngFor="let user of users" >
+  <strong>{{user.id}}</strong>
+  <span>{{user.name}}</span>
+</div>
+
